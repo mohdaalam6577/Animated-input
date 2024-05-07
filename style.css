@@ -12,7 +12,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: radial-gradient(circle, #a80e0e, #9b4000, #865d00, #6c7300, #498511);
+    background-image: radial-gradient(circle, #b130e1, #8c4ae2, #6758de, #4060d5, #1564c7);
 }
 
 .box {
@@ -86,7 +86,7 @@ body {
 }
 
 .box .button a {
-    background: radial-gradient(circle, #a80e0e, #9b4000, #865d00, #6c7300, #498511);
+    background-image: radial-gradient(circle, #b130e1, #8c4ae2, #6758de, #4060d5, #1564c7);
     color: white;
     text-decoration: none;
     padding: 10px 20px;
