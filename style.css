@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, #a80e0e, #9b4000, #865d00, #6c7300, #498511);
+}
+
+.box {
+    width: 450px;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 5px;
+
+}
+
+.box .inputText {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    
+}
+
+.box .inputText input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 18px;
+    border-bottom: 2px solid gray;
+}
+
+.box .inputText label {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.box .inputText input:focus ~ label,
+.box .inputText input:valid ~ label {
+    transform: translateY(-20px);
+    font-size: 16px;
+    color: rgb(40, 40, 235);
+}
+
+.box .inputText .underline {
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 100%;
+}
+
+.inputText .underline:before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: rgb(40, 40, 235);
+    transform: scaleX(0);
+    transition: transform .3s ease;
+}
+
+.box .inputText input:focus ~ .underline::before,
+.box .inputText input:valid ~ .underline::before {
+    transform: scaleX(1);
+}
+
+.box .button {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 30px;
+    /* border: 1px solid; */
+}
+
+.box .button a {
+    background: radial-gradient(circle, #a80e0e, #9b4000, #865d00, #6c7300, #498511);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* transition: trasform 0.10s ease; */
+}
+.box .button a:hover {
+    background: rgb(40, 40, 235);
+    transition: 0.9s;
+}
